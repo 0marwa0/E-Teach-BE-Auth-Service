@@ -71,7 +71,7 @@ app.use(cookieParser());
 app.get('/health', (req, res) => {
   res.json({
     success: true,
-    message: 'Auth service is running',
+    message: 'Auth service is running successfully',
     timestamp: new Date().toISOString(),
     uptime: process.uptime()
   });
